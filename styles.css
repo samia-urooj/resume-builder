@@ -56,9 +56,7 @@ body {
   }
 
   #generatedResume{
-    /* flex: 1;
-   align-items: center;
-    justify-content: center; */
+
     padding: 10mm;
     box-sizing: border-box;
     width: 660px;
@@ -94,4 +92,85 @@ text-align: center;
   margin: 0 auto;
   border-radius: 150px;
  
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgb(250, 250, 238);
+    
+  }
+ 
+  .container h2{
+    margin-left: auto;
+    text-align: center;
+  }
+  .container h3{
+    text-decoration: underline;
+    margin-bottom: auto;
+    color: rgb(0, 0, 112);
+  }
+  form, #resumePreview {
+    /* flex: 1; */
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(250, 250, 238);
+    border-radius: 8px;
+     border: solid black 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-left: 550px; */
+  }
+
+  .container input{
+    height: 40px;
+    width: 240px;
+    border-radius: 5px;
+    box-shadow: #976060;
+    margin-top: 10px
+  }
+  button {
+    margin-top: 20px;
+    /* padding: 10px 20px; */
+    background-color:#002346;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 33px;
+    font-size: 14px;
+    margin-left: 0;
+    /* margin-left: 550px; */
+  }
+  
+  button:hover {
+    background-color: #6b9ee2;
+  }
+
+
+  #generatedResume{
+
+    padding: 10mm;
+    box-sizing: border-box;
+    width: 660px;
+    background-color: rgb(250, 250, 238);
+   overflow: visible;
+    border: solid black 1px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #editButton{
+    /* margin-left: auto; */
+    cursor: pointer;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 0%;
+  }
+  #pdfButton{
+    /* margin-left: auto; */
+     cursor: pointer;
+     margin-top: 50px;
+     margin-left: 100px;
+     /* position: absolute; */
+   }
 }
