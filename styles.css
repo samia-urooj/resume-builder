@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+     justify-content: center;
+    padding: 20px;
+   background-color: #fafafa;
+  }
+  
+  .container {
+    display: flex;
+    width: 50%;
+    /* gap: 10px; */
+  }
+  .container h2{
+    margin-left: 100px;
+  }
+  .container h3{
+    text-decoration: underline;
+    margin-bottom: auto;
+    color: rgb(0, 0, 112);
+  }
+
+  form, #resumePreview {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(250, 250, 238);
+    border-radius: 8px;
+     border: solid black 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-left: 550px; */
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:#002346;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 17px;
+    margin-left: 0;
+    /* margin-left: 550px; */
+  }
+  
+  button:hover {
+    background-color: #6b9ee2;
+  }
+  .container input{
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: #976060;
+    margin-top: 10px
+  }
+
+  #generatedResume{
+    /* flex: 1;
+   align-items: center;
+    justify-content: center; */
+    padding: 10mm;
+    box-sizing: border-box;
+    width: 660px;
+    background-color: rgb(250, 250, 238);
+   overflow: visible;
+    border: solid black 1px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #generatedResume h2{
+    text-align: center;
+    margin-left: auto;
+  }
+ 
+  #editButton{
+    /* margin-left: auto; */
+    cursor: pointer;
+    margin-top: 50px;
+    position: absolute;
+    
+  }
+  #pdfButton{
+    /* margin-left: auto; */
+     cursor: pointer;
+     margin-top: 50px;
+     margin-left: 120px;
+     position: absolute;
+   }
+#finalPhoto{
+text-align: center;
+  height: 250px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 150px;
+ 
+}

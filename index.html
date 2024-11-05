@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+   <!-- FORM CONT -->
+    <div id="formContainer">
+      <form id="resumeForm">
+        <h2><u>Personal Information</u></h2>
+        <h3>Full Name</h3>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <h3>Email address</h3>
+        <input type="text" id="email" placeholder="xyz@gmail.com" required>
+        <h3>Education</h3>
+        <input type="text" id="education" placeholder="Education" required>
+        <h3>Degree</h3>
+        <input type="text" id="degree" placeholder="Your degree" required>
+        <h3>Skills</h3>
+        <input type="text" id="skills" placeholder="Your skills"> 
+        <h3>Work Experience</h3>
+        <input type="text" id="work" placeholder="Work Experience" required>
+        
+       <br><br>
+        <label for="photo"><h3>Upload photo</h3></label>
+        <input type="file" name="photo" id="photo" required>
+      </form>
+      <button id="generateButton">Generate Resume</button>
+    </div>
+
+    <!-- HIDDEN CONTAINER RESUME BUILD HONY K BD -->
+    <div id="generatedResume" style="display: none;">
+      <h2>MY RESUME</h2>
+      <img id="finalPhoto" alt="Profile Photo">
+      <p><strong><h3><u>Name:</u></h3></strong> <span id="finalName"></span></p>
+      <p><strong><h3><u>Email address:</u></h3></strong> <span id="finalEmail"></span></p><br>
+      <p><strong><h3><u>Education:</u></h3></strong> <span id="finalEducation"></span></p>
+      <p><strong><h3><u>Degree:</u></h3></strong> <span id="finalDegree"></span></p><br>
+      <p><strong><h3><u>Skills:</u></h3></strong> <span id="finalSkills"></span></p>
+  <p><strong><h3><u>Work Experience:</u></h3></strong> <span id="finalWork"></span></p>
+      <button id="editButton">Edit Info</button><button id="pdfButton">Download as a PDF</button>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
+
